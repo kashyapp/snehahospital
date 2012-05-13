@@ -9,6 +9,7 @@ gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
 
 # Component requirements
+gem "therubyracer", :require => 'v8'
 gem 'rack-less'
 gem 'less'
 gem 'haml'
