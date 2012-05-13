@@ -7,6 +7,7 @@ source :rubygems
 # Project requirements
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
+gem 'thin'
 
 # Component requirements
 gem "therubyracer", :require => 'v8'

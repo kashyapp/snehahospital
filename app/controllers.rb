@@ -18,5 +18,12 @@ Web.controllers  do
   #   "Hello world!"
   # end
 
-  
+  get :index do
+    render "index"
+  end
+
+  get :contact_us, :map => "/contact" do
+    render "contact_us"
+  end
+
 end

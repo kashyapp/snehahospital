@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title= [@title, "Sneha Hospital"].compact.join(" | ")
+    = stylesheet_link_tag 'bootstrap.min', 'application'
+    = javascript_include_tag 'jquery', 'jquery-ujs', 'bootstrap.min', 'application'
+  %body
+    .container
+      .navbar
+        .navbar-inner
+          .container
+            =link_to 'Sneha Hospital', url_for(:index), :class => 'brand'
+            %ul.nav
+              %li
+                =link_to 'Contact Us', url_for(:contact_us)
+      .container
+        %h1= @title
+        = yield
