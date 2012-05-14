@@ -1,5 +1,5 @@
 class Web < Padrino::Application
-  register LessInitializer
+  # register LessInitializer
   register Padrino::Rendering
   register Padrino::Mailer
   register Padrino::Helpers

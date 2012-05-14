@@ -10,9 +10,11 @@
         .navbar-inner
           .container
             =link_to 'Sneha Hospital', url_for(:index), :class => 'brand'
-            %ul.nav
+            %ul.nav.pull-right
               %li
-                =link_to 'Contact Us', url_for(:contact_us)
+                %a{:href => url_for(:contact_us)}
+                  %i.icon-envelope.icon-white
+                  Contact Us
       .container
         %h1= @title
         = yield
