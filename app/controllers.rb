@@ -22,6 +22,10 @@ Web.controllers  do
     render "index"
   end
 
+  get :about do
+    render "about"
+  end
+
   get :contact_us, :map => "/contact" do
     render "contact_us"
   end

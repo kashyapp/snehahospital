@@ -7,6 +7,11 @@ body {
   background-repeat: repeat-x;
 }
 
+.main-container {
+  background-image: url(../images/white-semitrans.png);
+  background-repeat: repeat-all;
+}
+
 .sneha-logo {
   float: right;
 }

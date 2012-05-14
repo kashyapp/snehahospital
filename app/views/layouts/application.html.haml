@@ -5,16 +5,23 @@
     = stylesheet_link_tag 'bootstrap.min', 'application'
     = javascript_include_tag 'jquery', 'jquery-ujs', 'bootstrap.min', 'application'
   %body
-    .container
+    .container.main-container
       .navbar
         .navbar-inner
           .container
             =link_to 'Sneha Hospital', url_for(:index), :class => 'brand'
             %ul.nav.pull-right
-              %li
+              %li{:class => @navbar_active_index}
+                %a{:href => url_for(:index)}
+                  %i.icon-home.icon-white
+                  Home
+              %li{:class => @navbar_active_about}
+                %a{:href => url_for(:about)}
+                  %i.icon-info-sign.icon-white
+                  About
+              %li{:class => @navbar_active_contact_us}
                 %a{:href => url_for(:contact_us)}
-                  %i.icon-envelope.icon-white
-                  Contact Us
+                  %i.icon-map-marker.icon-white
+                  Reach Us
       .container
-        %h1= @title
         = yield
