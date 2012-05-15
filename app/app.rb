@@ -57,5 +57,7 @@ class Web < Padrino::Application
   #     render 'errors/505'
   #   end
   #
+
+  set :haml, {:ugly => true}
   set :static_cache_control, [:public, :max_age => 2592000]
 end

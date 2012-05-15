@@ -1,12 +1,33 @@
 - @title="About"
 - @navbar_active_about=:active
 .row
-  .span6
+  .span12
     .page-header
-      %h1
-        Dr. PSN Murthy
-        %small M.D
-    =image_tag 'murthy-small.jpg'
+      %h1 About the Hospital
+    :markdown
+      We founded Sneha in 1999 in a leased premises off Dornakal Road and moved to the current building in 2001.
+      Our staff, comprising of well trained nurses and ayahs, keeps the hospital a clean, cozy and efficient place.
+      And we have none of that impersonal and intimidating environment that the word _Hospital_ commonly brings to mind.
+
+      Facilities
+      ----------
+      * NICU
+      * Operating Theatre
+      * Labour room
+      * A/C Special rooms
+      * General ward
+      * Battery-backed power
+
+.row
+  .span12
+    .page-header
+      %h1 Doctors
+.row
+  .span6
+    %h2
+      Dr. PSN Murthy
+      %small M.D
+    =image_tag 'murthy-small.jpg', {:height => 320, :width => 216}
     %h3 Brief Bio
     %p
       Dr. Murthy finished his <abbr class="initialism">MD</abbr> in Paediatrics at 
@@ -15,11 +36,10 @@
       he went on to work in Iran for over 7years. Returning to Vijayawada in 1995, 
       he worked at the St. Ann's Hospital for a few years before starting private practice.
   .span6
-    .page-header
-      %h1
-        Dr. P Rama Devi
-        %small M.B.B.S, D.G.O
-    =image_tag 'rama-small.jpg'
+    %h2
+      Dr. P Rama Devi
+      %small M.B.B.S, D.G.O
+    =image_tag 'rama-small.jpg', {:height => 320, :width => 216}
     %h3 Brief Bio
     %p
       Dr. Rama finished her <abbr class="initialism">MBBS</abbr> and 

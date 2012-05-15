@@ -14,6 +14,7 @@ gem "therubyracer", :require => 'v8'
 gem 'rack-less'
 gem 'less'
 gem 'haml'
+gem 'rdiscount'
 
 # Test requirements
 
