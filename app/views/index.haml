@@ -8,16 +8,20 @@
         %h1 Sneha
         %p Mother &amp; Child Hospital
       %hr/
-      %p.main-hero-unit-contents
-        %strong> Dr.P.S.N.Murthy
-        %br/
-        %span<>
-          %abbr.initialism M.D
-          (Paediatrics)
-        %br/
-        %strong> Dr.P.Ramadevi
-        %br/
-        %abbr.initialism M.B.B.S, D.G.O
+      .row-fluid
+        .span6
+          %p
+            %strong
+              =link_to 'Dr. PSN Murthy', url_for(:about)
+            %br/
+            %abbr.initialism M.D
+            (Paediatrics)
+        .span6
+          %p
+            %strong
+              =link_to 'Dr. P Rama Devi', url_for(:about)
+            %br/
+            %abbr.initialism M.B.B.S, D.G.O
 .row
   .span12.offset0
     %ul.thumbnails
