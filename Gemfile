@@ -1,28 +1,34 @@
 source :rubygems
 
 # Server requirements
-# gem 'thin' # or mongrel
-# gem 'trinidad', :platform => 'jruby'
+platforms :jruby do
+  gem 'trinidad'
+  gem 'jruby-openssl'
+  gem 'jruby-rack'
+end
+
+platforms :ruby do
+  gem 'thin'
+end
 
 # Project requirements
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
-gem 'thin'
 
 # Component requirements
-gem "therubyracer", :require => 'v8'
-gem 'rack-less'
-gem 'less'
+# gem "therubyracer", :require => 'v8'
+# gem 'rack-less'
+# gem 'less'
 gem 'haml'
 gem 'rdiscount'
 
 # Test requirements
 
 # Padrino Stable Gem
-gem 'padrino', '0.10.6'
+# gem 'padrino', '0.10.6'
 
 # Or Padrino Edge
-# gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
+gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
 
 # Or Individual Gems
 # %w(core gen helpers cache mailer admin).each do |g|

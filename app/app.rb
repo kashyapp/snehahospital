@@ -59,5 +59,5 @@ class Web < Padrino::Application
   #
 
   set :haml, {:ugly => true}
-  set :static_cache_control, [:public, :max_age => 2592000]
+  set :static_cache_control, [:public, {:max_age => 2592000}]
 end
