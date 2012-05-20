@@ -25,10 +25,10 @@ gem 'rdiscount'
 # Test requirements
 
 # Padrino Stable Gem
-# gem 'padrino', '0.10.6'
+gem 'padrino', '0.10.6'
 
 # Or Padrino Edge
-gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
+# gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
 
 # Or Individual Gems
 # %w(core gen helpers cache mailer admin).each do |g|
@@ -36,5 +36,5 @@ gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
 # end
 
 # Require new relic as late as possible
-gem 'newrelic_rpm'
-
+gem 'padrino-rpm'
+# gem 'newrelic_rpm'
