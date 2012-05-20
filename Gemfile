@@ -22,6 +22,8 @@ gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'haml'
 gem 'rdiscount'
 
+gem 'newrelic_rpm'
+
 # Test requirements
 
 # Padrino Stable Gem
