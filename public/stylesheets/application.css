@@ -1,11 +1,11 @@
 body {
-  background-image: url(../images/grid-18px-masked.png);
-  background-repeat: repeat-x;
+  background-image: url(../images/noise/noise_05.jpg);
+  background-repeat: repeat;
 }
 
 .main-container {
   background-image: url(../images/white-semitrans.png);
-  background-repeat: repeat-all;
+  background-repeat: no-repeat;
 }
 
 .sneha-logo {
