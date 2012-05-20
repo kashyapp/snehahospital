@@ -22,8 +22,6 @@ gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'haml'
 gem 'rdiscount'
 
-gem 'newrelic_rpm'
-
 # Test requirements
 
 # Padrino Stable Gem
@@ -36,3 +34,7 @@ gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
 # %w(core gen helpers cache mailer admin).each do |g|
 #   gem 'padrino-' + g, '0.10.6'
 # end
+
+# Require new relic as late as possible
+gem 'newrelic_rpm'
+
